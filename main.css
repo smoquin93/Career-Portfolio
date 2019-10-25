@@ -1,0 +1,145 @@
+body {
+	background-image: url('~asset/banner.png');
+	background-attachment: fixed;
+	background-color: #EBFCEB;
+	font-family: candara;
+	font-size: 10px;
+	font-color: #D1E6D6;
+}
+
+a {
+	color: #307326;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #5DB452;
+}
+
+/* -----------banner----------- */
+
+header {
+	width: auto;
+	height: 150px;
+	margin-left: -10px;
+	margin-top: -10px;
+	padding: 0px;
+}
+
+header > #banner {
+	position: relative;
+	margin-top: 4%;
+}
+
+#banner > p {
+	color: #307326;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* -----------------Navigation---------------*/
+
+nav {
+	background-color: white;
+	border-style: solid;
+	border-color: #d0e1d1;
+	border-width: 2px;
+	margin-left: -10px;
+	margin-top: -10%;
+	width: 15%;
+	height: auto;
+	position: fixed;
+	z-index: 10px;
+	color: #90B9D6;
+}
+
+#nav-content {
+	
+}
+
+#logodesign {
+	width: 150px;
+	height: 150px;
+	margin-left: 13%;
+	margin-top: 10%;
+}
+
+#navigation-list {
+	margin-left: -25px;
+	margin-top: 20%;
+}
+
+#navigation-list > ul {
+	list-style-type: none;
+}
+
+#navigation-list > ul > li {
+	font-size: 20px;
+	padding: 10px 8px;
+}
+
+/* ------------------ Body Content ---------------- */
+
+#main {
+	background-color: #ebfceb;
+	border-style: solid;
+	border-color: #d0e1d1;
+	border-width: 2px;
+	width: auto;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+article {
+	text-align: center;
+}
+
+#intro {
+	color: #307225;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+hr {
+	color: #a4daa8;
+	width: 500px;
+}
+
+/* --------------------------- Footer ---------------------- */
+
+footer {
+	position: absolute;
+	font-size: 10px;
+	color: #5DB452;
+	list-style-type: none;
+	margin-top: 200px;
+	margin-bottom: 100px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #d0e1d1;
+	margin-left: 30%;
+	background-color: #ebfceb;
+	padding: 5px;
+	width: 50%;
+	
+}
+
+footer > ul {
+	margin-left: 15px;
+	text-align: center;
+}
+
+footer > ul > li {
+	float: left;
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+}
+
+#update-footer{
+	color: #5DB452;
+	font-size: 10px;
+	text-align: center;
+}

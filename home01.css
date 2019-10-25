@@ -1,0 +1,23 @@
+#new-gallery {
+	margin-top: 5%;
+	margin-left: 10%;
+	}
+
+.header-article {
+	color: #307226;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.social-media-header {
+	color: #307226;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.greeters {
+	max-width: 700px;
+	max-height: 700px;
+	width: auto;
+	height: auto;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Shannon Fairbank's E-Portfolio | Concept Design
+		</title>
+		<link rel="stylesheet" href="../main.css"> 
+		<link rel="stylesheet" href="design.css">
+		<script src="design.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div id="banner">
+				<p>
+					-Shannon Fairbank's E-Portfolio-
+				</p>
+			</div>
+		</header>
+		
+<!-- --------------------- Banner --------------------- -->		
+
+		<nav>
+			<div id="nav-content">
+				<div id="logo">
+					<a href="../index.html"><img src="../~asset/logo.png" id="logodesign" /></a>
+				</div>
+				
+<!-- -------------------- Navigation ------------------ -->	
+		
+				<div id="navigation-list">
+					<ul>
+						<li>
+							<a href="../Sketchbook/sketchbook.html">Sketchbook</a>
+						</li>
+						
+						<li>
+							Concept Designs
+						</li>
+						
+						<li>
+							<a href="../Projects/projects.html">Personal Projects</a>
+						</li>
+						
+						<li>
+							<a href="../Demo_Reel/demoreel.html">Demo Reel</a>
+						</li>
+						
+						<li>
+							<a href="../About/about.html">About Me</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+				
+<!-- --------------------- Body Content ----------------- -->
+		
+		<div id="main">
+			<article>
+				<div id="article-content">
+					<div id="intro">
+						<p>
+							<br />
+							<br />
+							Concept Designs
+						</p>
+						<br />
+						<br />
+						<div id="table">
+							<div class="tableR">
+								<div class="tableC"><img src="Pictures/001.jpg" class="image-gallery" onclick="openModal();currentSlide(1)" /></div>
+								<div class="tableC"><img src="Pictures/002.jpg" class="image-gallery" onclick="openModal();currentSlide(2)" /></div>
+								<div class="tableC"><img src="Pictures/003.jpg" class="image-gallery" onclick="openModal();currentSlide(3)" /></div>
+								<div class="tableC"><img src="Pictures/004.jpg" class="image-gallery" onclick="openModal();currentSlide(4)" /></div>
+							</div>
+							<div class="tableR">
+								<div class="tableC"><img src="Pictures/006.jpg" class="image-gallery" onclick="openModal();currentSlide(5)" /></div>
+								<div class="tableC"><div></div></td>
+								<div class="tableC"><div></div></td>
+								<div class="tableC"><div></div></td>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+<!-- ------------------- Footer ----------------------- -->
+			
+			<footer>
+				<hr />
+				<ul>
+					<li><a href="index.html">Home</a> | &nbsp;</li>
+					<li><a href="#">Sketchbook</a> | &nbsp;</li>
+					<li><a href="#">Concept Design</a> |&nbsp; </li>
+					<li><a href="#">Personal Projects</a> | &nbsp;</li>
+					<li><a href="#">Demo Reel </a> | &nbsp; </li>
+					<li><a href="#">About Me</a></li>
+				</ul>
+				<br />
+				<br />
+				<p id="update-footer">
+					Updated: xx/xx/xxxx
+				</p>
+			</footer>
+		</div>
+		
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+			<div class="mySlides" style="background-color: black;">
+				<img src="Pictures/001.jpg" style="max-width:1200px; max-height:700px; width: auto; height: auto; position:relative; left:30%; background-color: black" />
+			</div>
+			<div class="mySlides" style="background-color: black;">
+				<img src="Pictures/002.jpg" style="max-width:1200px; max-height:700px; width: auto; height: auto; position:relative; left:30%; background-color: black" />
+			</div>
+			<div class="mySlides" style="background-color: black;">
+				<img src="Pictures/003.jpg" style="max-width:1200px; max-height:700px; width: auto; height: auto; position:relative; left:30%; background-color: black" />
+			</div>
+			<div class="mySlides" style="background-color: black;">
+				<img src="Pictures/004.jpg" style="max-width:1200px; max-height:700px; width: auto; height: auto; position:relative; left:30%; background-color: black" />
+			</div>
+			<div class="mySlides" style="background-color: black;">
+				<img src="Pictures/006.jpg" style="max-width:1200px; max-height:700px; width: auto; height: auto; position:relative; left:30%; background-color: black" />
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+			</div>
+		</div>
+	</div>
+	</body>
+	
+	<script>
+	window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+  </script>
+	
+</html>

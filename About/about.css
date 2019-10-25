@@ -1,0 +1,28 @@
+#icon-pic {
+	position: relative;
+	left: -250px;
+	width: 500px;
+	height: 550px;
+}
+
+#maillink {
+	position: relative;
+	top: -350px;
+	left: 200px;
+	font-size: 30px;
+}
+
+.dheadtext {
+	font-size: 30px;
+	font-color: #D1E6D6;
+}
+
+.dsub {
+	font-size: 20px;
+	font-color: #D1E6D6;
+}
+
+.ddetail {
+	font-size: 15px;
+	font-color: #D1E6D6;
+}
