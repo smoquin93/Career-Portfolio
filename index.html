@@ -6,6 +6,7 @@
 		</title>
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="home01.css">
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
 	</head>
 	
 	<body>
@@ -61,9 +62,10 @@
 					<br />
 					<br />
 					
-					<div id="greeterCharacters">
-						<img src="asset/Greeters/Mango.png" class="greeters" />
+					<div >
+						<img id="greeterCharacters" style="max-width: 700px; max-height: 700px; width: auto; height: auto;" />
 					</div>
+					<h3>Refreshing loads different greeters!</h3>
 				</div>
 			</article>
 			
@@ -124,5 +126,14 @@
       return false;
     }
   };
+  
+  var allGreeters = [
+	'asset/Greeters/Mango.png',
+	'asset/Greeters/Ivan.png'
+]
+
+var x = Math.floor(Math.random() * allGreeters.length);
+var img = document.getElementById('greeterCharacters');
+img.src = allGreeters[x];
   </script>
 </html>

@@ -15,9 +15,7 @@
 	font-weight: bold;
 }
 
-.greeters {
-	max-width: 700px;
-	max-height: 700px;
-	width: auto;
-	height: auto;
+.greeterCharacters {
+	position: relative;
+	left: 0px;
 }
