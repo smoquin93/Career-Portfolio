@@ -26,7 +26,7 @@ header {
 	padding: 0px;
 }
 
-header > #banner {
+#banner {
 	position: relative;
 	margin-top: 4%;
 }
